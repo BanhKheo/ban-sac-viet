@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bản Sắc Việt Trong Môi Trường Quốc Tế | Vận Dụng Tư Tưởng Hồ Chí Minh - Trường ĐH Quốc Tế (IU)</title>
+  <meta name="description"
+    content="Website chuyên đề: Vận dụng tư tưởng Hồ Chí Minh trong việc bảo vệ và phát huy bản sắc văn hóa Việt Nam cho sinh viên Trường Đại học Quốc tế (ĐHQG-HCM). 4 tình huống thực tiễn, phân tích lý luận và giải pháp.">
+  <meta name="author" content="Nhóm 7 - Trường Đại học Quốc tế, ĐHQG-HCM">
+  <meta name="theme-color" content="#0c0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bản Sắc Việt Trong Môi Trường Quốc Tế — Sinh Viên IU">
+  <meta property="og:description"
+    content="Hội nhập để học hỏi, giữ bản sắc để kết nối. 4 tình huống thực tiễn và giải pháp gìn giữ bản sắc văn hóa Việt Nam.">
+  <meta property="og:image" content="assets/images/final_image1.png">
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('bsv_theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav container">
+      <a href="#home" class="brand" aria-label="Trang chủ Bản Sắc Việt">
+        Bản Sắc Việt<span class="brand-dot">.</span>
+      </a>
+
+      <ul id="nav-links">
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#ly-luan">Cơ sở lý luận</a></li>
+        <li><a href="#tinh-huong">4 Tình huống</a></li>
+        <li><a href="#giai-phap">Giải pháp</a></li>
+        <li><a href="#thong-diep">Thông điệp</a></li>
+        <li><a href="#nguon">Minh chứng &amp; Nguồn</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Đổi giao diện Sáng / Tối"
+          title="Chuyển đổi Sáng / Tối">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Tư tưởng Hồ Chí Minh · Nhóm 7 · Trường Đại học Quốc tế ĐHQG-HCM
+        </div>
+        <h1>
+          BẢN SẮC VIỆT<br>
+          <span class="text-gradient">TRONG MÔI TRƯỜNG<br>QUỐC&nbsp;TẾ</span>
+        </h1>
+        <p class="hero-sub">
+          “Hội nhập để học hỏi, giữ bản sắc để kết nối.” Khám phá cách sinh viên IU vận dụng tư tưởng Hồ Chí Minh để tự
+          tin bước ra thế giới mà vẫn vững vàng gốc rễ dân tộc.
+        </p>
+        <div class="hero-cta">
+          <a href="#tinh-huong" class="btn btn-primary">
+            <i class="fa-solid fa-compass"></i> Khám phá 4 tình huống
+          </a>
+          <a href="#ly-luan" class="btn btn-ghost">
+            <i class="fa-solid fa-book-open"></i> Xem cơ sở lý luận
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section id="gioi-thieu" class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Lời mở đầu</div>
+          <h2 class="section-title">Hòa nhập nhưng không hòa tan</h2>
+          <p class="section-lead">
+            Trong môi trường đại học chuẩn quốc tế, sinh viên hàng ngày tiếp xúc với đa dạng nền văn hóa, ngôn ngữ và
+            phương pháp tư duy. Làm thế nào để vừa chủ động tiếp thu tri thức hiện đại, vừa tự hào phát huy bản sắc
+            Việt?
+          </p>
+        </div>
+
+        <div class="intro-content">
+          <div class="intro-text reveal">
+            <p>
+              Đối với sinh viên <strong>Trường Đại học Quốc tế (ĐHQG-HCM)</strong>, bản sắc văn hóa không chỉ đơn thuần
+              là những tiết mục biểu diễn hay món ăn truyền thống trong các ngày hội quốc tế. Bản sắc hiện diện sinh
+              động trong từng nếp nghĩ, thái độ ứng xử, cách giao tiếp hàng ngày và tinh thần học hỏi có chọn lọc.
+            </p>
+            <p>
+              Tư tưởng Hồ Chí Minh về văn hóa mang lại kim chỉ nam soi sáng: xem văn hóa là phương thức sinh tồn và phát
+              triển, lấy văn hóa dân tộc làm gốc rễ, đồng thời mở rộng tầm nhìn đón nhận tinh hoa của nhân loại.
+            </p>
+            <p>
+              Qua <strong>4 tình huống thực tiễn tiêu biểu</strong> tại IU — từ kết nối bạn bè quốc tế, tham gia chương
+              trình trao đổi ở nước ngoài, lan tỏa văn hóa trên không gian mạng, đến làm việc trong nhóm đa quốc gia —
+              trang web này đúc kết những gợi ý ứng xử thiết thực, gần gũi và sâu sắc cho mỗi sinh viên.
+            </p>
+          </div>
+          <div class="intro-visual reveal">
+            <div class="media-card">
+              <img src="assets/images/final_image1.png"
+                alt="Sinh viên quốc tế và sinh viên IU cùng gói bánh chưng truyền thống" loading="lazy">
+              <p class="media-caption">
+                <span>Hoạt động gói bánh chưng gắn kết văn hóa giữa sinh viên IU và bạn bè quốc tế</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THEORY SECTION (CƠ SỞ LÝ LUẬN) -->
+    <section id="ly-luan" class="content-section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Nền tảng tư tưởng</div>
+          <h2 class="section-title">Cơ sở lý luận Tư tưởng Hồ Chí Minh</h2>
+          <p class="section-lead">
+            Hệ thống ba luận điểm cốt lõi làm nền tảng định hướng cho nhận thức và hành động của sinh viên trong môi
+            trường toàn cầu hóa.
+          </p>
+        </div>
+
+        <div class="theory-grid">
+          <!-- Card 1 -->
+          <div class="theory-card reveal" style="--d:1">
+            <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>1. Giữ gìn &amp; phát huy bản sắc dân tộc</h3>
+            <p>
+              Theo Hồ Chí Minh, bản sắc văn hóa dân tộc là thành quả bền vững qua hàng nghìn năm dựng nước và giữ nước,
+              bao gồm hai tầng giá trị:
+            </p>
+            <ul style="margin: .75rem 0 1rem 1.25rem; font-size: .875rem; color: var(--text-dim); line-height: 1.6;">
+              <li><strong>Lớp nội dung:</strong> Lòng yêu nước, thương nòi, tinh thần độc lập, tự cường và tự tôn dân
+                tộc.</li>
+              <li><strong>Lớp hình thức:</strong> Ngôn ngữ, trang phục, phong tục, tập quán, lễ hội, cách cảm và nếp
+                nghĩ.</li>
+            </ul>
+            <p>
+              <em>Ý nghĩa với SV IU:</em> Giữ gìn không chỉ là hoài niệm quá khứ mà phải làm cho giá trị tốt đẹp tiếp
+              tục hiện diện và có ý nghĩa trong môi trường học thuật hiện đại.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="theory-card reveal" style="--d:2">
+            <div class="card-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <h3>2. Tiếp thu có chọn lọc tinh hoa nhân loại</h3>
+            <p>
+              Hồ Chí Minh chủ trương giao lưu văn hóa toàn diện Đông - Tây - kim - cổ: <em>“Cái gì hay, cái gì tốt thì
+                học lấy”</em> để làm giàu cho nền văn hóa Việt Nam.
+            </p>
+            <ul style="margin: .75rem 0 1rem 1.25rem; font-size: .875rem; color: var(--text-dim); line-height: 1.6;">
+              <li><strong>Cởi mở nhưng không bắt chước:</strong> Tiếp thu phương pháp khoa học, tác phong làm việc
+                chuyên nghiệp mà không sao chép máy móc.</li>
+              <li><strong>Tránh hai thái cực sai lầm:</strong> Tránh mặc cảm, tự ti trước văn hóa nước ngoài; đồng thời
+                không tự cao tự đại, khép kín.</li>
+            </ul>
+            <p>
+              <em>Ý nghĩa với SV IU:</em> Tự tin tiếp thu tri thức, ngoại ngữ và kỹ năng toàn cầu trên tinh thần suy xét
+              chủ động và độc lập.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="theory-card reveal" style="--d:3">
+            <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3>3. Lấy văn hóa dân tộc làm gốc để tiếp thu</h3>
+            <p>
+              Mối quan hệ biện chứng thống nhất: Lấy cội nguồn dân tộc làm điểm tựa vững chắc, làm bộ lọc giá trị để
+              tiếp nhận tinh hoa thế giới.
+            </p>
+            <p style="margin-top: .75rem;">
+              Trong tác phẩm <em>Đời sống mới</em>, Bác nhấn mạnh nguyên tắc:
+            </p>
+            <blockquote
+              style="margin: .75rem 0; padding-left: 1rem; border-left: 2px solid var(--accent); font-style: italic; font-size: .85rem; color: var(--text);">
+              “Cái gì cũ mà xấu thì phải bỏ. Cái gì cũ mà không xấu, nhưng phiền phức thì phải sửa đổi cho hợp lý. Cái
+              gì cũ mà tốt thì phải phát triển thêm. Cái gì mới mà hay thì phải làm.”
+            </blockquote>
+            <p>
+              <em>Ý nghĩa với SV IU:</em> Bản lĩnh vững vàng để hội nhập sâu rộng mà không đánh mất cốt cách người Việt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITUATIONS SECTION (4 TÌNH HUỐNG) -->
+    <section id="tinh-huong" class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Thực tiễn sinh viên IU</div>
+          <h2 class="section-title">Khám phá 4 Tình huống Điển hình</h2>
+          <p class="section-lead">
+            Bốn bối cảnh học tập, giao lưu thực tế tại Trường Đại học Quốc tế — bốn gợi ý ứng xử thiết thực được soi rọi
+            bởi Tư tưởng Hồ Chí Minh.
+          </p>
+        </div>
+
+        <div class="situations-grid">
+
+          <!-- SITUATION 1 -->
+          <article class="situation reveal" id="tinh-huong-1">
+            <header class="situation-header">
+              <div class="situation-number">01</div>
+              <div>
+                <div class="situation-tag">IU Buddy · Kết nối văn hóa</div>
+                <h3>Kết bạn và Hỗ trợ Sinh viên Quốc tế</h3>
+              </div>
+            </header>
+
+            <div class="situation-body">
+              <div class="situation-text">
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-location-dot"></i> Bối cảnh thực tế</h4>
+                  <p>
+                    CLB IU Buddy được thành lập nhằm kết nối sinh viên IU với các bạn sinh viên quốc tế đến trao đổi học
+                    tập tại trường. Vào dịp Tết Nguyên đán (năm 2021 và 2024), IU Buddy tổ chức hoạt động truyền thống
+                    gói bánh chưng, bánh tét gắn kết văn hóa.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-circle-question"></i> Điểm khó xử</h4>
+                  <p>
+                    Khi trò chuyện, một bạn quốc tế tò mò về cách xưng hô kính ngữ “anh”, “chị”, “em” và các phong tục
+                    ngày Tết. Sinh viên IU nên giải thích thế nào để vừa gần gũi, chính xác mà không biến thói quen
+                    riêng của một gia đình hay vùng miền thành chuẩn mực của toàn bộ người Việt?
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-lightbulb"></i> Cách ứng xử đề xuất</h4>
+                  <ul>
+                    <li>Giải thích cách xưng hô bằng ví dụ đời thường, phân biệt rõ tập quán giao tiếp chung với thói
+                      quen gia đình riêng.</li>
+                    <li>Mời bạn quốc tế cùng trải nghiệm hoạt động thực tế như gói bánh chưng/bánh tét; thông qua trải
+                      nghiệm để bạn cảm nhận tinh thần sum vầy ngày Tết.</li>
+                    <li>Chủ động lắng nghe và tìm hiểu về nét văn hóa quê hương của người bạn quốc tế để tạo sự tương
+                      tác hai chiều, bình đẳng.</li>
+                  </ul>
+                </div>
+
+                <div class="theory-box">
+                  <h5><i class="fa-solid fa-bookmark"></i> Vận dụng Tư tưởng Hồ Chí Minh</h5>
+                  <p>
+                    Vận dụng quan điểm của Bác về ngoại giao hữu nghị và bản sắc qua hai lớp: giới thiệu ngôn ngữ và
+                    phong tục (lớp hình thức) gắn liền với tấm lòng hiếu khách, chân thành (lớp nội dung). Việc không
+                    quy chụp phong tục riêng thành tập quán chung thể hiện sự tôn trọng tính đa dạng văn hóa.
+                  </p>
+                </div>
+
+                <div
+                  style="margin-top: 1.25rem; padding: .75rem 1rem; background: rgba(240,182,72,.1); border-left: 3px solid var(--gold); border-radius: 6px;">
+                  <strong style="color: var(--gold); font-size: .85rem; text-transform: uppercase;">Thông điệp hành
+                    động:</strong>
+                  <div style="font-size: .9rem; color: var(--text); margin-top: .25rem;">
+                    “Giải thích chân thành, chia sẻ bằng trải nghiệm và dành chỗ cho sự đa dạng trong văn hóa.”
+                  </div>
+                </div>
+              </div>
+
+              <div class="situation-media">
+                <div class="media-card">
+                  <img src="assets/images/final_image1.png"
+                    alt="Sinh viên nước ngoài cùng sinh viên IU gói bánh chưng xanh truyền thống" loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 1.1:</strong> Sinh viên quốc tế cùng SV IU gói bánh chưng xanh truyền thống tại
+                      IU</span>
+                  </p>
+                  <a href="https://www.facebook.com/share/p/1G3aThF7D8/" target="_blank" rel="noopener"
+                    class="media-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Nguồn minh chứng: Facebook IU Buddy
+                  </a>
+                </div>
+                <div class="media-card">
+                  <img src="assets/images/final_image3.png" alt="Sinh viên trao đổi học làm bánh tét truyền thống"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 1.2:</strong> Sinh viên trao đổi thích thú trải nghiệm làm bánh tét</span>
+                  </p>
+                  <a href="https://www.facebook.com/share/p/1EjKSaDHAL/" target="_blank" rel="noopener"
+                    class="media-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Nguồn minh chứng: Facebook IU Buddy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SITUATION 2 -->
+          <article class="situation reveal" id="tinh-huong-2">
+            <header class="situation-header">
+              <div class="situation-number">02</div>
+              <div>
+                <div class="situation-tag">IU-SEaSAP · Trao đổi sinh viên</div>
+                <h3>Học Hỏi Nước Ngoài, Giữ Kết Nối Văn Hóa Việt</h3>
+              </div>
+            </header>
+
+            <div class="situation-body">
+              <div class="situation-text">
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-location-dot"></i> Bối cảnh thực tế</h4>
+                  <p>
+                    Chương trình IU-SEaSAP và các diễn đàn quốc tế — tiêu biểu như Hội nghị Sinh viên Đại học Châu Á
+                    (NUS Asian Undergraduate Symposium 2025 tại Singapore) với đại diện sinh viên IU Nguyễn Lê Đan Vy —
+                    mang lại cơ hội trải nghiệm phương pháp học tập và tác phong hiện đại.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-circle-question"></i> Điểm khó xử</h4>
+                  <p>
+                    Khi bước ra trường quốc tế, sinh viên đứng trước thách thức: Làm sao thích nghi nhanh chóng với môi
+                    trường đa văn hóa, tiếp thu tác phong khoa học mà vẫn giữ vững căn tính người Việt, không bị phai
+                    nhạt tiếng mẹ đẻ và mối liên hệ với quê hương?
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-lightbulb"></i> Cách ứng xử đề xuất</h4>
+                  <ul>
+                    <li>Chủ động học hỏi phương pháp tư duy phản biện, tác phong làm việc đúng giờ, chuyên nghiệp từ
+                      nước bạn.</li>
+                    <li>Tự tin giới thiệu nét đẹp Việt Nam: mặc áo dài truyền thống tại các sự kiện học thuật trang
+                      trọng, chia sẻ ẩm thực và câu chuyện văn hóa trong các bài thuyết trình.</li>
+                    <li>Duy trì sử dụng tiếng Việt trong sinh hoạt và chủ động giữ liên lạc với cộng đồng du học sinh,
+                      kiều bào tại nước sở tại.</li>
+                  </ul>
+                </div>
+
+                <div class="theory-box">
+                  <h5><i class="fa-solid fa-bookmark"></i> Vận dụng Tư tưởng Hồ Chí Minh</h5>
+                  <p>
+                    Thấm nhuần tinh thần trong <em>Đời sống mới</em>: <em>“Cái gì mới mà hay thì phải làm, cái gì cũ mà
+                      tốt thì phát triển thêm”</em>. Khi ra thế giới, sinh viên không tự ti mặc cảm (đánh mất mình)
+                    nhưng cũng không tự cao tự đại; lấy văn hóa dân tộc làm gốc để chắt lọc tinh hoa học thuật nhân
+                    loại, đúng theo lời dạy “Dân ta phải biết sử ta”.
+                  </p>
+                </div>
+
+                <div
+                  style="margin-top: 1.25rem; padding: .75rem 1rem; background: rgba(240,182,72,.1); border-left: 3px solid var(--gold); border-radius: 6px;">
+                  <strong style="color: var(--gold); font-size: .85rem; text-transform: uppercase;">Thông điệp hành
+                    động:</strong>
+                  <div style="font-size: .9rem; color: var(--text); margin-top: .25rem;">
+                    “Học hỏi có chọn lọc, đồng thời tự tin giới thiệu văn hóa Việt Nam.”
+                  </div>
+                </div>
+              </div>
+
+              <div class="situation-media">
+                <div class="media-card">
+                  <img src="assets/images/final_image4.png" alt="Sinh viên Nguyễn Lê Đan Vy tại Hội nghị NUS-AUS 2025"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 2.1:</strong> Nguyễn Lê Đan Vy đại diện SV IU tham dự Hội nghị Sinh viên Châu Á
+                      tại NUS (NUS-AUS) 2025</span>
+                  </p>
+                  <a href="https://www.facebook.com/share/p/1FbsfwPzi3/" target="_blank" rel="noopener"
+                    class="media-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Nguồn minh chứng: Facebook IU Student
+                    Exchange
+                  </a>
+                </div>
+                <div class="media-card">
+                  <img src="assets/images/final_image6.png" alt="Đoàn đại biểu sinh viên giao lưu quốc tế"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 2.2:</strong> Giao lưu học thuật và kết nối bạn bè quốc tế tại diễn đàn NUS-AUS</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SITUATION 3 -->
+          <article class="situation reveal" id="tinh-huong-3">
+            <header class="situation-header">
+              <div class="situation-number">03</div>
+              <div>
+                <div class="situation-tag">Mạng xã hội · Lan tỏa có trách nhiệm</div>
+                <h3>Chia Sẻ Văn Hóa Việt Nam Trên Không Gian Số</h3>
+              </div>
+            </header>
+
+            <div class="situation-body">
+              <div class="situation-text">
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-location-dot"></i> Bối cảnh thực tế</h4>
+                  <p>
+                    Sinh viên IU có thế mạnh ngoại ngữ và kỹ năng công nghệ, thường xuyên sáng tạo nội dung trên TikTok,
+                    Facebook, Instagram và YouTube để giới thiệu ẩm thực TP.HCM, áo dài và nét đẹp đời sống sinh viên
+                    tới bạn bè quốc tế.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-circle-question"></i> Điểm khó xử</h4>
+                  <p>
+                    Định dạng video ngắn đòi hỏi sự súc tích, hấp dẫn và bắt trend, song cách diễn đạt vắn tắt dễ dẫn
+                    đến việc truyền đạt sai lệch ý nghĩa lịch sử hoặc biến một tập quán cá nhân/địa phương thành đại
+                    diện cho toàn bộ văn hóa Việt Nam.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-lightbulb"></i> Cách ứng xử đề xuất</h4>
+                  <ul>
+                    <li>Kiểm chứng thông tin qua tài liệu học thuật, nguồn bảo tàng hoặc tài liệu chính thống trước khi
+                      xuất bản.</li>
+                    <li>Ghi rõ ngữ cảnh vùng miền, nguồn gốc lịch sử hoặc phạm vi trải nghiệm cá nhân thay vì khái quát
+                      hóa tuyệt đối.</li>
+                    <li>Sử dụng hình ảnh chất lượng cao, phụ đề song ngữ Anh - Việt để bạn bè quốc tế dễ tiếp cận và
+                      thấu hiểu đúng thông điệp.</li>
+                  </ul>
+                </div>
+
+                <div class="theory-box">
+                  <h5><i class="fa-solid fa-bookmark"></i> Vận dụng Tư tưởng Hồ Chí Minh</h5>
+                  <p>
+                    Hồ Chí Minh chỉ rõ: <em>“Văn hóa phải đi sâu vào tâm lý quốc dân, đi vào đời sống mới”</em> và luôn
+                    đề cao vai trò xung kích của thanh niên. Việc sử dụng mạng xã hội và tiếng Anh để lan tỏa di sản
+                    chính là cách thế hệ trẻ bảo vệ và phát huy văn hóa dân tộc trong kỷ nguyên số, kết hợp bảo tồn sự
+                    chân thực với công cụ hiện đại.
+                  </p>
+                </div>
+
+                <div
+                  style="margin-top: 1.25rem; padding: .75rem 1rem; background: rgba(240,182,72,.1); border-left: 3px solid var(--gold); border-radius: 6px;">
+                  <strong style="color: var(--gold); font-size: .85rem; text-transform: uppercase;">Thông điệp hành
+                    động:</strong>
+                  <div style="font-size: .9rem; color: var(--text); margin-top: .25rem;">
+                    “Kiểm chứng trước khi đăng; xác định bối cảnh trước khi khái quát.”
+                  </div>
+                </div>
+              </div>
+
+              <div class="situation-media">
+                <div class="media-card">
+                  <img src="assets/images/situation_3_social.jpg" alt="Sáng tạo nội dung số quảng bá văn hóa Việt Nam"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 3.1:</strong> Lan tỏa nét đẹp văn hóa, ẩm thực và danh lam thắng cảnh qua lăng
+                      kính người trẻ</span>
+                  </p>
+                </div>
+
+                <div
+                  style="background: var(--surface-hi); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border); margin-top: .5rem;">
+                  <h5 style="color: var(--gold); font-size: .85rem; font-weight: 600; margin-bottom: .75rem;">
+                    <i class="fa-brands fa-facebook"></i> Minh chứng dự án truyền thông số:
+                  </h5>
+                  <ul
+                    style="list-style: none; padding: 0; font-size: .825rem; display: flex; flex-direction: column; gap: .5rem;">
+                    <li>
+                      <a href="https://www.facebook.com/share/v/19vmoN7Fv9/" target="_blank" rel="noopener"
+                        class="media-link">
+                        <i class="fa-solid fa-video"></i> Video giới thiệu về TP. Hồ Chí Minh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/share/v/1D2bTyByZE/" target="_blank" rel="noopener"
+                        class="media-link">
+                        <i class="fa-solid fa-video"></i> Video giới thiệu ẩm thực TP. Hồ Chí Minh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/share/p/1Dy7nfsX9W/" target="_blank" rel="noopener"
+                        class="media-link">
+                        <i class="fa-solid fa-newspaper"></i> Bài viết quảng bá văn hóa ẩm thực TP.HCM
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SITUATION 4 -->
+          <article class="situation reveal" id="tinh-huong-4">
+            <header class="situation-header">
+              <div class="situation-number">04</div>
+              <div>
+                <div class="situation-tag">Làm việc nhóm · Tôn trọng khác biệt</div>
+                <h3>Văn Hóa Ứng Xử Trong Nhóm Đa Văn Hóa</h3>
+              </div>
+            </header>
+
+            <div class="situation-body">
+              <div class="situation-text">
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-location-dot"></i> Bối cảnh thực tế</h4>
+                  <p>
+                    Tại các buổi chào đón tân sinh viên quốc tế (như <em>Orientation Day</em>) và trong các lớp học đồ
+                    án tại IU, các nhóm học tập thường có sự kết hợp giữa sinh viên bản địa và sinh viên quốc tế đến từ
+                    châu Âu, châu Á và châu Mỹ.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-circle-question"></i> Điểm khó xử</h4>
+                  <p>
+                    Sự khác biệt về văn hóa giao tiếp: thành viên phương Tây quen phản biện trực diện, thẳng thắn, trong
+                    khi sinh viên Á Đông thường chuộng sự ý tứ, giữ hòa khí. Một lời nhận xét thẳng dễ bị hiểu nhầm là
+                    thiếu thiện chí, ngược lại phản hồi chung chung lại gây chậm tiến độ công việc.
+                  </p>
+                </div>
+
+                <div class="sub-section">
+                  <h4><i class="fa-solid fa-lightbulb"></i> Cách ứng xử đề xuất</h4>
+                  <ul>
+                    <li>Lắng nghe chủ động, trao đổi trực tiếp để xác nhận ý định trước khi đưa ra nhận định vội vàng về
+                      đồng đội.</li>
+                    <li>Thống nhất ngay từ đầu buổi làm việc về mục tiêu chung, phân công vai trò rõ ràng, deadline và
+                      quy ước giao tiếp.</li>
+                    <li>Kết hợp tinh thần làm việc nhóm chuyên nghiệp với nét đẹp văn hóa ứng xử nhân văn, lịch thiệp,
+                      tôn trọng người hướng dẫn và bình đẳng giữa các thành viên.</li>
+                  </ul>
+                </div>
+
+                <div class="theory-box">
+                  <h5><i class="fa-solid fa-bookmark"></i> Vận dụng Tư tưởng Hồ Chí Minh</h5>
+                  <p>
+                    Vận dụng tư tưởng Bác về đạo đức, tình yêu thương con người và phong cách làm việc <em>“chí công vô
+                      tư”</em>. Tôn trọng sự khác biệt nhưng giữ vững nguyên tắc; thể hiện nét ứng xử lịch thiệp, hòa
+                    nhã của văn hóa Việt Nam mà không tự cho văn hóa của mình là trên hết hay tự ti trước bạn bè.
+                  </p>
+                </div>
+
+                <div
+                  style="margin-top: 1.25rem; padding: .75rem 1rem; background: rgba(240,182,72,.1); border-left: 3px solid var(--gold); border-radius: 6px;">
+                  <strong style="color: var(--gold); font-size: .85rem; text-transform: uppercase;">Thông điệp hành
+                    động:</strong>
+                  <div style="font-size: .9rem; color: var(--text); margin-top: .25rem;">
+                    “Lắng nghe để hiểu, thống nhất cách làm và góp ý để cùng đạt mục tiêu.”
+                  </div>
+                </div>
+              </div>
+
+              <div class="situation-media">
+                <div class="media-card">
+                  <img src="assets/images/final_image7.png" alt="Sinh viên trao đổi, thảo luận nhóm trong lớp học IU"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 4.1:</strong> Sinh viên quốc tế và sinh viên IU thảo luận, làm việc nhóm trong
+                      lớp học</span>
+                  </p>
+                  <a href="https://www.facebook.com/share/p/1BTDGLorNd/" target="_blank" rel="noopener"
+                    class="media-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Nguồn minh chứng: Facebook CLB / Trường ĐH
+                    Quốc Tế
+                  </a>
+                </div>
+                <div class="media-card">
+                  <img src="assets/images/final_image9.png" alt="Sinh viên tham gia Orientation Day tại IU"
+                    loading="lazy">
+                  <p class="media-caption">
+                    <span><strong>Hình 4.2:</strong> Orientation Day: Giao lưu chào đón sinh viên quốc tế đến học tập tại IU</span>
+                  </p>
+                  <a href="https://www.facebook.com/share/p/1C6N9acvPH/" target="_blank" rel="noopener"
+                    class="media-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Nguồn minh chứng: Facebook IU Buddy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS SECTION (GIẢI PHÁP) -->
+    <section id="giai-phap" class="content-section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Hành động của sinh viên</div>
+          <h2 class="section-title">Hệ Thống 4 Trụ Cột Giải Pháp</h2>
+          <p class="section-lead">
+            Đúc kết từ tư tưởng Hồ Chí Minh thành hướng dẫn hành động cụ thể cho sinh viên Trường Đại học Quốc tế trong
+            học tập và đời sống.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="theory-card reveal" style="--d:1">
+            <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+            <h3>1. Vững vàng gốc rễ tri thức &amp; lịch sử</h3>
+            <p>
+              Thực hiện lời dạy của Bác: <em>“Dân ta phải biết sử ta, cho tường gốc tích nước nhà Việt Nam”</em>. Chủ
+              động tìm hiểu sâu sắc về lịch sử, phong tục, di sản văn hóa dân tộc để có sự tự tin và kiến thức đúng đắn
+              khi chia sẻ với bạn bè năm châu.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="theory-card reveal" style="--d:2">
+            <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3>2. Giao lưu cởi mở &amp; Tôn trọng khác biệt</h3>
+            <p>
+              Giao lưu văn hóa trên tinh thần bình đẳng, chân thành và cầu thị. Lắng nghe đa chiều, chấp nhận góc nhìn
+              khác biệt trong làm việc nhóm mà không phán xét vội vã; học hỏi tác phong khoa học nhưng kiên định giữ
+              vững cốt cách nhân văn.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="theory-card reveal" style="--d:3">
+            <div class="card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>3. Lan tỏa văn hóa có trách nhiệm trên không gian số</h3>
+            <p>
+              Tận dụng thế mạnh ngoại ngữ, kỹ năng multimedia và các nền tảng mạng xã hội để quảng bá nét đẹp Việt Nam;
+              luôn kiểm chứng tính xác thực của thông tin, ghi rõ bối cảnh và tránh khái quát hóa sai lệch.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="theory-card reveal" style="--d:4">
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>4. Tiếp thu có chọn lọc tinh hoa nhân loại</h3>
+            <p>
+              Vận dụng nguyên tắc trong <em>Đời sống mới</em>: tiếp thu phương pháp nghiên cứu tiên tiến, kỷ luật và
+              ngoại ngữ hiện đại; đồng thời kiên quyết loại bỏ những thói quen lạc hậu, xây dựng phong cách sống văn
+              minh và tích cực.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE MESSAGE SECTION (THÔNG ĐIỆP) -->
+    <section id="thong-diep" class="content-section">
+      <div class="container">
+        <div class="message-card reveal">
+          <div class="message-inner">
+            <div class="message-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <blockquote>
+              “Giữ gìn bản sắc không có nghĩa là khép mình trước những điều mới. Hãy tìm hiểu trước khi kết luận, học
+              hỏi có chọn lọc, chia sẻ văn hóa Việt Nam bằng thông tin chính xác và tôn trọng sự khác biệt.”
+            </blockquote>
+            <p class="message-detail">
+              — Thông điệp hành động gửi gắm tới toàn thể sinh viên Trường Đại học Quốc tế (ĐHQG-HCM) trên hành trình
+              vươn ra biển lớn tri thức.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES & CREDITS SECTION (MINH CHỨNG & NGUỒN) -->
+    <section id="nguon" class="content-section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Tài liệu &amp; Minh chứng</div>
+          <h2 class="section-title">Nguồn Tham Khảo &amp; Minh Chứng</h2>
+          <p class="section-lead">
+            Tất cả nội dung lý luận và minh chứng hình ảnh thực tế được trích xuất từ giáo trình chính thống và các hoạt
+            động thực tế tại Trường Đại học Quốc tế.
+          </p>
+        </div>
+
+        <ul class="references-list reveal">
+          <li>
+            <strong>Giáo trình chính luận:</strong> Bộ Giáo dục và Đào tạo (2021). <em>Giáo trình Tư tưởng Hồ Chí
+              Minh</em> (Dành cho bậc đại học hệ không chuyên ngành lý luận chính trị). Hà Nội: NXB Chính trị quốc gia
+            Sự thật. Chương VI: Tư tưởng Hồ Chí Minh về văn hóa, đạo đức, con người (tr. 207–214).
+          </li>
+          <li>
+            <strong>Hoạt động gói Bánh Chưng truyền thống Tết (IU Buddy):</strong> Hoạt động kết nối văn hóa dành cho
+            sinh viên quốc tế tại Trường ĐH Quốc Tế.<br>
+            <a href="https://www.facebook.com/share/p/1G3aThF7D8/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> https://www.facebook.com/share/p/1G3aThF7D8/
+            </a>
+          </li>
+          <li>
+            <strong>Hoạt động làm Bánh Tét Tết:</strong> Trải nghiệm ẩm thực truyền thống Việt Nam cùng sinh viên trao
+            đổi.<br>
+            <a href="https://www.facebook.com/share/p/1EjKSaDHAL/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> https://www.facebook.com/share/p/1EjKSaDHAL/
+            </a>
+          </li>
+          <li>
+            <strong>Hội nghị Sinh viên Đại học Châu Á tại NUS (NUS-AUS 2025):</strong> Đại diện SV Nguyễn Lê Đan Vy tham
+            dự trao đổi học thuật tại Singapore.<br>
+            <a href="https://www.facebook.com/share/p/1FbsfwPzi3/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> https://www.facebook.com/share/p/1FbsfwPzi3/
+            </a>
+          </li>
+          <li>
+            <strong>Truyền thông văn hóa &amp; ẩm thực TP. Hồ Chí Minh:</strong> Các video và bài viết song ngữ quảng bá
+            văn hóa.<br>
+            <a href="https://www.facebook.com/share/v/19vmoN7Fv9/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> Video giới thiệu TP.HCM: https://www.facebook.com/share/v/19vmoN7Fv9/
+            </a><br>
+            <a href="https://www.facebook.com/share/v/1D2bTyByZE/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> Video ẩm thực TP.HCM: https://www.facebook.com/share/v/1D2bTyByZE/
+            </a><br>
+            <a href="https://www.facebook.com/share/p/1Dy7nfsX9W/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> Bài viết quảng bá ẩm thực: https://www.facebook.com/share/p/1Dy7nfsX9W/
+            </a>
+          </li>
+          <li>
+            <strong>Orientation Day &amp; Thảo luận nhóm đa văn hóa:</strong> Hoạt động giao lưu, học tập nhóm tại
+            IU.<br>
+            <a href="https://www.facebook.com/share/p/1BTDGLorNd/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> Thảo luận lớp học: https://www.facebook.com/share/p/1BTDGLorNd/
+            </a><br>
+            <a href="https://www.facebook.com/share/p/1C6N9acvPH/" target="_blank" rel="noopener" class="media-link">
+              <i class="fa-solid fa-link"></i> Chào đón tân SV quốc tế: https://www.facebook.com/share/p/1C6N9acvPH/
+            </a>
+          </li>
+          <li>
+            <strong>Thực hiện đề tài:</strong> Nhóm 7 — Học phần Tư tưởng Hồ Chí Minh. Bộ hình minh chứng và tư liệu do
+            Phạm Quan Sang và nhóm thực hiện.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand">
+          Bản Sắc Việt<span class="brand-dot">.</span>
+        </div>
+        <p style="font-size: .8rem; color: var(--text-muted); margin-top: .35rem;">
+          Trường Đại học Quốc tế — Đại học Quốc gia TP. Hồ Chí Minh
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#ly-luan">Lý luận</a></li>
+        <li><a href="#tinh-huong">Tình huống</a></li>
+        <li><a href="#giai-phap">Giải pháp</a></li>
+        <li><a href="#thong-diep">Thông điệp</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Bản Sắc Việt — Vận dụng Tư tưởng Hồ Chí Minh. Nhóm 7 thực hiện.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="to-top" id="to-top" type="button" aria-label="Lên đầu trang">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
