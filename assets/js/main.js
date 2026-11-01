@@ -25,18 +25,10 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ---------- THEME TOGGLE (DARK / LIGHT) ---------- */
-  const themeToggle = document.getElementById('theme-toggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      try {
-        localStorage.setItem('bsv_theme', newTheme);
-      } catch (e) {}
-    });
-  }
+  // Clean up any legacy saved theme preference
+  try {
+    localStorage.removeItem('bsv_theme');
+  } catch (e) {}
 
   /* ---------- MOBILE NAV TOGGLE ---------- */
   const navToggle = document.getElementById('nav-toggle');
