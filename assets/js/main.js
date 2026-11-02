@@ -35,19 +35,36 @@
   const navLinks = document.getElementById('nav-links');
 
   if (navToggle && navLinks) {
+    const toggleIcon = navToggle.querySelector('i');
+
+    function closeMenu() {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      if (toggleIcon) {
+        toggleIcon.className = 'fa-solid fa-bars';
+      }
+      document.body.style.overflow = '';
+    }
+
     navToggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', isOpen);
+      if (toggleIcon) {
+        toggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      }
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // Close on link click
     navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+      a.addEventListener('click', closeMenu);
+    });
+
+    // Close when window resized beyond mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navLinks.classList.contains('open')) {
+        closeMenu();
+      }
     });
   }
 
